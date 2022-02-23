@@ -1,0 +1,28 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topNav{
+    overflow: hidden;
+    background-color: burlywood;
+    height: 70px;
+}
+
+
+nav a{
+    text-decoration: none;
+    padding:10px;
+    margin: 0%;
+    float: left;
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.topNav a:hover{
+    background-color:rgb(138, 114, 84);
+}
