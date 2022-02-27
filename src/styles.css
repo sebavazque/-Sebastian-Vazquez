@@ -1,0 +1,60 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+
+.topNav{
+    overflow: hidden;
+    background-color: burlywood;
+    height: 70px;
+}
+
+
+.navHead a{
+    text-decoration: none;
+    padding:10px;
+    margin: 0%;
+    float: right;
+    display: block;
+    color: #000000;
+    font-size: 20 px;
+    margin-top: 10px;
+}
+
+.topNav a:hover{
+    background-color:rgb(138, 114, 84);
+    margin: 0;
+    height: 70px;
+}
+
+.icon a{
+    color: #000000;
+    font-size: 30px;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    padding: 8px;
+    text-decoration: none; 
+}
+
+.icon a:hover{
+    background-color:rgb(138, 114, 84);
+    margin: 0;
+    height: 70px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+}
+
