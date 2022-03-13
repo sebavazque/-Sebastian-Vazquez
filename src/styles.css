@@ -1,0 +1,187 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+
+.topNav{
+    
+    background-color: burlywood;
+    height: 70px;
+}
+
+
+.navHead a{
+    text-decoration: none;
+    padding:10px;
+    margin: 0%;
+    float: right;
+    display: block;
+    color: #000000;
+    font-size: 20 px;
+    margin-top: 10px;
+}
+
+.navHead a:hover{
+    background-color:rgb(138, 114, 84);
+
+}
+
+
+.icon a{
+    color: #000000;
+    font-size: 30px;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    padding: 8px;
+    text-decoration: none; 
+}
+
+.icon a:hover{
+    background-color:rgb(138, 114, 84);
+
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo{
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+
+.container img{
+    height: 350px;
+    width: 100%;
+    
+}
+
+
+
+.container{
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 15px;
+
+}
+
+.cards{
+    width: 100%;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0 , 0 ,0 ,0.2);
+}
+
+.content{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.cards h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.cards h4{
+    text-align: center;
+}
+
+.addCart{
+    text-align: center;
+    padding: 15px;
+}
+
+.addCart button{
+    border-radius: 6px;
+    background-color:white;
+    font-size: 20px;
+    border: 1px solid #4b4b4b;
+    color: #000000;
+    padding: 10px;
+}
+
+.content button{
+    border-radius: 6px;
+    background-color:white;
+    font-size: 20px;
+    border: 1px solid #4b4b4b;
+    color: #000000;
+    padding: 8px;
+    margin: 5px;
+}
+
+.contenedor{
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin: 0px;
+    float: left;
+    text-align: center;
+    
+}
+
+.contenedor img{
+    height: 350px;
+    width: 100%;
+    
+}
+
+.container p{
+    margin: 15px;
+}
+
+
+.ver{
+    font-size: 17px;
+    background-color: rgb(241, 233, 223);
+    border-radius: 6px;
+    padding: 6px;
+    margin: 10px;
+    border-color: #c7c3c3;
+}
+
+button .verMas{
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+
+nav ul{
+    background-color:rgb(138, 114, 84);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+nav li{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.dropDownContainer:hover li{
+    display: flex;
+    
+}
