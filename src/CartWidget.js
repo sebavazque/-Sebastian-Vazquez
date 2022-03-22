@@ -7,9 +7,11 @@ import {Link} from "react-router-dom";
 
 const CartWidget = () => {
     return (
+    <section>
         <div className='icon'>
             <Link to="/carrito" ><FontAwesomeIcon icon={faCartArrowDown} /></Link>
         </div>
+    </section>
     );   
 }
 

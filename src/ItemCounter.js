@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import MiProvider from './CartContext';
 
-const ItemCounter = ({stock,initial,onAdd}) => {
+const ItemCounter = ({ producto,stock,initial,}) => {
+
 
     const [numero , setNumero] = useState(initial)
-    
 
-
-
+    const {addItem}= useContext(MiProvider)
     const sumar = () => {
         if(numero < stock){
             setNumero(numero + 1)
@@ -40,7 +40,9 @@ const ItemCounter = ({stock,initial,onAdd}) => {
                 <button onClick={restar}>-</button>
 
                 <div className='addCart'>
-                    <button onClick={onAdd}>Agregar al carrito</button>    
+                    <button onClick={addItem}>
+                        Agregar al carrito!
+                    </button>    
                 </div>
                     </div>
                 </div>    

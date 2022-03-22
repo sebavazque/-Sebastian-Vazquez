@@ -1,6 +1,7 @@
 import ItemCounter from "./ItemCounter";
-import { useState } from "react";
+import { useState, useContext} from "react";
 import { Link } from "react-router-dom";
+import MiProvider from "./CartContext";
 
 
 
@@ -14,39 +15,37 @@ const ItemDetail = ({
     genero,
     material,
     categoria,
+    cantidad,
+    
 }) => {
     
     const [add , setAdd] = useState(false) 
-
-    const onAdd = () =>{
-        setAdd(!add)
-    }
-    
-
+ const {addItem} = useContext(MiProvider)
     
     return (
-        
-    <div className="container">
-        <div className="cards" key={id}>
-            <img src= {image} alt="" />
-            <h2> {titulo} </h2>
-            <h4>${precio} </h4>
-            <p>Origen: {origen} </p>
-            <p>Genero: {genero} </p>
-            <p>Material: {material}</p>
-            <div>
-            {
-                add ?
-                    <div className="añadido">Añadido!</div>
-                    :
-                <ItemCounter stock={5} initial={1} onAdd={onAdd} />
-                }
-                
-            </div>
-            <div className='endCart'> <Link to="/carrito" > <button> Finalizar compra!</button> </Link></div>
-        </div> 
+        <div className="superContent">
+            <div className="container">
+                <div className="cards" key={id}>
+                    <img src= {image} alt="" />
+                    <h2> {titulo} </h2>
+                    <h4>${precio} </h4>
+                    <p>Origen: {origen} </p>
+                    <p>Genero: {genero} </p>
+                    <p>Material: {material}</p>
+                    <div>
+                    {
+                        add ?
+                            <div className="añadido">Añadido!</div>
+                            :
+                        <ItemCounter producto={{id,image,titulo,precio,cantidad}} stock={5} initial={1} {...addItem} />
+                        }
+                        
+                    </div>
+                    <div className='endCart'> <Link to="/carrito" > <button> Finalizar compra!</button> </Link></div>
+                </div> 
 
-    </div>
+            </div>
+        </div>
     );
 }
 
